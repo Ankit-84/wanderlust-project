@@ -84,10 +84,11 @@ app.use((req,res,next) => {
     next();
 });
 
+app.use("/",userRouter);
+
 app.use("/listings",listingRouter);
 
 app.use("/listings/:id/reviews",reviewRouter);
-app.use("/",userRouter);
 
 app.all("*",(req,res,next) => {
     next(new ExpressError(404,"Page not found!"));

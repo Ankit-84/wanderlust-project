@@ -49,7 +49,28 @@
                         Please provide a valid location.
                     </div>
                 </div>
-                
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example" name="listing[filter]">
+                        <option value="<%= listing.filter %>" selected><%= listing.filter %></option>
+                        <option value="Amazing Pool" >Amazing Pool</option>
+                        <option value="Farms">Farms</option>
+                        <option value="Design">Design</option>
+                        <option value="Rooms">Rooms</option>
+                        <option value="Treehouses">Treehouses</option>
+                        <option value="Beach">Beach</option>
+                        <option value="Domes">Domes</option>
+                        <option value="Top of the world">Top of the world</option>
+                        <option value="Trending">Trending</option>
+                        <option value="Top cities">Top cities</option>
+                        <option value="Camping">Camping</option>
+                        <option value="Arctic">Arctic</option>
+                        <option value="Boats">Boats</option>
+                        <option value="Creative spaces">Creative spaces</option>
+                        <option value="Skiing">Skiing</option>
+                        <option value="Towers">Towers</option>
+                        <option value="Camper vans">Camper vans</option>
+                      </select>
+                </div>
                 <button type="submit" class="btn btn-outline-danger mt-3">Edit</button>
                 <br><br>
             </form>

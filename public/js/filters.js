@@ -45,3 +45,71 @@ let taxSwitch = document.getElementById("flexSwitchCheckDefault");
             }
         }
     });
+
+    document.querySelectorAll('.filter').forEach(filter => {
+        filter.addEventListener('click', () => {
+            const filterName = filter.getAttribute('data-filter'); // Get the filter name
+            console.log(`Filter clicked: ${filterName}`);
+    
+            // Redirect based on the clicked filter
+            let targetUrl = '';
+            switch (filterName) {
+                case 'Amazing Pool':
+                targetUrl = '/amazing-pool';
+                break;
+            case 'Farms':
+                targetUrl = '/farms';
+                break;
+            case 'Design':
+                targetUrl = '/design';
+                break;
+            case 'Rooms':
+                targetUrl = '/rooms';
+                break;
+            case 'Treehouses':
+                targetUrl = '/treehouses';
+                break;
+            case 'Beach':
+                targetUrl = '/beach';
+                break;
+            case 'Domes':
+                targetUrl = '/domes';
+                break;
+            case 'Top of the world':
+                targetUrl = '/top-of-the-world';
+                break;
+            case 'Trending':
+                targetUrl = '/trending';
+                break;
+            case 'Top cities':
+                targetUrl = '/top-cities';
+                break;
+            case 'Camping':
+                targetUrl = '/camping';
+                break;
+            case 'Arctic':
+                targetUrl = '/arctic';
+                break;
+            case 'Boats':
+                targetUrl = '/boats';
+                break;
+            case 'Creative spaces':
+                targetUrl = '/creative-spaces';
+                break;
+            case 'Skiing':
+                targetUrl = '/skiing';
+                break;
+            case 'Towers':
+                targetUrl = '/towers';
+                break;
+            case 'Camper vans':
+                targetUrl = '/camper-vans';
+                break;
+            default:
+                targetUrl = '/'; 
+            }
+            window.location.href = targetUrl;
+        });
+    });
+    
+    

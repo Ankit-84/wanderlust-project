@@ -61,16 +61,15 @@
       }
         .filter-container {
           margin-left: 0 !important;
-          width: 67vw !important;
+          width: 68vw !important;
         }
         .filter{
           margin-left: 0 rem;
         }
         .tax-toggle{
-          margin-left: 1rem !important;
+          margin-left: 2rem !important;
           padding: 0.3 rem;
-          /* width: 45vw !important;
-          height: 5.5rem !important; */
+          
           justify-content: center !important;
           align-items: center !important;
         }
