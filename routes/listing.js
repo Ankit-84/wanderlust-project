@@ -18,4 +18,7 @@ router.route("/:id").get(wrapAsync(listingcontroller.showListing)).put(isLoggedI
 //edit
 router.get("/:id/edit" ,isLoggedIn,isOwner, wrapAsync( listingcontroller.editListing));
 
+//search
+router.post("/search", wrapAsync( listingcontroller.searchListing));
+
 module.exports = router;

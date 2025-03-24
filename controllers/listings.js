@@ -80,3 +80,14 @@ module.exports.deleteListing = async (req,res) => {
     req.flash("success","Listing Deleted!");
     res.redirect("/listings");
 };
+
+module.exports.searchListing = async (req,res) => {
+    let {search} = req.body;
+    const allListings = await Listing.find({$or: [{title: search},{location: search},{country:search}]});
+    if(allListings && allListings.length !== 0){
+        res.render("listing/search.ejs",{allListings});
+    }else{
+        req.flash("error","No Such Listing Found!");
+        res.redirect("/listings");
+    }
+};
