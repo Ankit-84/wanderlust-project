@@ -61,7 +61,7 @@
       }
         .filter-container {
           margin-left: 0 !important;
-          width: 70vw !important;
+          width: 67vw !important;
         }
         .filter{
           margin-left: 0 rem;
@@ -76,5 +76,8 @@
         }
         .left-button {
           margin-left: 0 !important;
+        }
+        .scroll-btn {
+          border: none !important;
         }
     }
