@@ -56,9 +56,12 @@
         margin-left: 5rem;
     }
     @media (max-width:500px) {
+      .filters {
+        flex-wrap: wrap !important;
+      }
         .filter-container {
           margin-left: 0 !important;
-          width: 50vw !important;
+          width: 70vw !important;
         }
         .filter{
           margin-left: 0 rem;
@@ -66,8 +69,8 @@
         .tax-toggle{
           margin-left: 1rem !important;
           padding: 0.3 rem;
-          width: 45vw !important;
-          height: 5.5rem !important;
+          /* width: 45vw !important;
+          height: 5.5rem !important; */
           justify-content: center !important;
           align-items: center !important;
         }

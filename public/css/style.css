@@ -91,7 +91,7 @@ body {
 /* show listing */
 
 .show-img {
-    height: 40vh;
+    height: 33vh;
     width: 50vw !important;
 }
 
@@ -105,8 +105,8 @@ body {
 }
 /* map */
 #map {
-    height: 50vh;
-    width: 60vw;
+    height: 40vh;
+    width: 50vw;
 }
 
 .navbar {
@@ -115,12 +115,12 @@ body {
 }
 
 .navbar.expanded {
-    height: 15rem; /* Increased size when toggled */
+    height: 16rem; /* Increased size when toggled */
 }
 
-@media (max-width:500px) {
+@media (max-width:555px) {
     .show-card {
-        margin-left: 0 !important;
+        margin-left: 1rem !important;
     }
     .show-img {
         width: 80vw !important;
@@ -129,22 +129,39 @@ body {
         width: 80vw;
     }
     .list-map {
-        margin-left: 0 !important;
+        margin-left: 1rem !important;
     }
     .row {
         padding-left: 0rem;
         padding-right: 0rem;
     }
     .edit-btn {
-        margin-left: 0 !important;
+        margin-left: 1rem !important;
+        padding: 1px !important;
     }
     .list-review {
-        margin-left: 0 !important;
+        margin-left: 1rem !important;
     }
     .list-title {
-        margin-left: 0 !important;
+        margin-left: 1rem !important;
+    }
+    .delete-btn {
+        margin-left: 4rem !important;
+    }
+    .col-1 {
+        width: 5rem !important;
     }
     /* .navbar {
         height: 15rem;
     } */
+     .review-section {
+        width: 45vw !important;
+     }
+     .list-new , .list-signup{
+        margin-left: 1rem !important;
+        width: 85vw !important;
+     }
+     
+    
+
 }
